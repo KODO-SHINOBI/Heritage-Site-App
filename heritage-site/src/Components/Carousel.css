@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --aquamarine-color-1: rgb(109, 241, 190);
+    --aquamarine-color-2: rgb(204, 252, 233);
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background-color: rgb(179, 243, 218);
+    color: black;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.indicators {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    /* border: 2px solid red; */
+}
+
+.indicators>button {
+    width: 3rem;
+    height: 3rem;
+    /* font-size: 2rem; */
+    border: none;
+    border-radius: 50%;
+    margin: 0.2rem;
+    background-color: var(--aquamarine-color-2);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicators>button:hover {
+    background-color: var(--aquamarine-color-1);
+}
+
+.indicators .slide-label-box-container {
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+.indicators .slide-label-box-container .slide-label-box {
+    width: 0rem;
+    height: 0rem;
+    padding: 0.2rem 1.2rem;
+    background-color: var(--aquamarine-color-2);
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.indicators .slide-label-box-container button.active {
+    background-color: var(--aquamarine-color-1);
+    color: white;
+}

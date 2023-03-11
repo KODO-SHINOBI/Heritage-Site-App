@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Comfortaa:wght@700&family=Inconsolata&family=Merriweather&family=Montserrat:wght@200&family=Neonderthaw&family=PT+Serif&family=Poppins:wght@200;300;400;500;600;700;800&family=Quicksand&family=Rampart+One&family=Roboto+Mono&family=Roboto+Slab:wght@200&family=Sacramento&family=Tangerine&family=Tourney&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+:root {
+    --vlue-color: rgb(63, 73, 127);
+    --light-orange-color: rgb(255, 191, 169);
+    --black-color: rgb(44, 51, 51);
+    --violet-black-color: rgb(46, 79, 79);
+    --violet-blue-color: rgb(14, 131, 136);
+    --grey-color: rgb(245, 254, 252);
+    --grey-color-2: rgb(245, 246, 246);
+    --aquamarine-color-1: rgb(109, 241, 190);
+    --aquamarine-color-2: rgb(204, 252, 233);
+    --aquamarine-color-3: rgb(238, 253, 247);
+    --light-purple-blue-color: rgb(203, 228, 222);
+    --dark-neon-color: rgba(0, 255, 171, 1);
+    --pink-color-1: rgb(255, 99, 99);
+    --amatic-font: 'Amatic SC', cursive;
+    --merriweather-font: 'Merriweather', serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --poppins-font: 'Poppins', sans-serif;
+    --roboto-mono-font: 'Roboto Mono', monospace;
+    --roboto-slab-font: 'Roboto Slab', serif;
+    --cursive-font: 'Sacramento', cursive;
+    --rampant-font: 'Rampart One', cursive;
+    --comforta-font: 'Comfortaa', cursive;
+    --quicksand-font: 'Quicksand', sans-serif;
+}
+
+
+.items-container {
+    width: 100%;
+}
+
+.items-content-container {
+    width: 100%;
+}
+
+.items-contents {
+    width: 100%;
+    display: flex;
+    margin: 1rem 0rem;
+    /* background-color: var(--aquamarine-color-3); */
+    border-radius: 0.3rem;
+}
+
+.items-contents .items-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.items-title {
+    width: 100%;
+    background-color: var(--aquamarine-color-3);
+    border-radius: 0.3rem;
+    padding: 0.8rem 0rem;
+}
+
+.items-title h3 {
+    font-family: var(--quicksand-font);
+    letter-spacing: 0.8px;
+    margin-left: 2%;
+}
+
+.items-description {
+    width: 100%;
+    display: flex;
+    padding: 0.8rem 0.8rem;
+}
+
+.items-description-hidden {
+    display: none;
+}
+
+.items-description p {
+    color: gray;
+    font-family: var(--quicksand-font);
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-left: 2%;
+}
+
+.items-contents .icon-container {
+    width: 10%;
+    display: flex;
+}
+
+.items-contents .icon-container .icon-content {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.items-contents .icon-container .icon-content .icon {
+    color: var(--aquamarine-color-1);
+}
+
+.items-contents .icon-container .icon-content .icon:hover {
+    cursor: pointer;
+    margin-top: 3px;
+}
